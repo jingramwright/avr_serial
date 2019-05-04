@@ -1,4 +1,4 @@
-# AVR Timer #
+# AVR Serial #
 
 ## Description ##
 
