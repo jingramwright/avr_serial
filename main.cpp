@@ -6,7 +6,7 @@
                    _______ _______  ______ _____ _______
                    |______ |______ |_____/   |   |_____| |
                    ______| |______ |    \_ __|__ |     | |_____
-					   
+   
 --------------------------------------------------------------------------------
 OVERVIEW
 --------------------------------------------------------------------------------
@@ -18,6 +18,8 @@ VERSION HISTORY
   VERSION         DATE         AUTHOR                DESCRIPTION
   -------         ----         ------                -----------
   1.0             04/05/19     J. Ingram-Wright      Initial version
+  1.1             07/05/19     J. Ingram-Wright      Fixed spacing and alignment
+                                                     issues
 ------------------------------------------------------------------------------*/
 
 
@@ -53,13 +55,13 @@ int main(void)
 {
     uint8_t data; // Used to hold receive and send data.
 
-	initialiseSerial();
+    initialiseSerial();
 
-	while(1)
+    while(1)
     {
-	    data = receiveSerial();
+        data = receiveSerial();
         sendSerial(data);
     }   
-	
-	return 0;
+    
+    return 0;
 }
